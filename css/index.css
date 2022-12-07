@@ -2,7 +2,7 @@
 /*Skip to content*/
 
 /*Name for header*/
-ul span{
+nav span{
    display:none;
 }
 /*NAVIGATION*/
@@ -397,6 +397,7 @@ body{
 
 
 
+
  
  /* Media queries - Responsive timeline on screens less than 600px wide */
  @media screen and (max-width: 600px) {
@@ -487,7 +488,7 @@ body{
 }
 .flexContainer img{
   width: auto;
-  height: 250px;
+  height: 200px;
   text-align: center;
 
 }
@@ -532,7 +533,7 @@ body{
 
 /*TABLET*/
  @media screen and (min-width: 600px){
-  ul span{
+  nav span{
     display: inline;
     float: right;
     font-size: 20px;
@@ -604,7 +605,7 @@ body{
  
 
  @media screen and (min-width:800px) {
-  ul span{
+  nav span{
     color: white;
     text-align: center;
     font-size: 27px;
