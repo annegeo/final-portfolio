@@ -25,7 +25,6 @@
         <a href="#main">Skip To Main Content</a>
     </div>
     <header>
-        <nav>
             <nav>
                 <ul>
                     <li><a href = "index.html" class = "aboutNav">About Me</a></li>
@@ -35,7 +34,20 @@
                 </ul>
                 <!-- <p class = "title" >Anne George</p> -->
             </nav>
-        </nav>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+              </div>
+              <script>
+                window.onscroll = function() {myFunction()};
+    
+                function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+                }
+    
+              </script>
        
     </header>
 
@@ -302,6 +314,26 @@
                 </div>
             </div>
         </div>
+        <p class="tvReview">
+            Feel free to leave your own review on any of these shows! 
+        </p>
+        <div>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaykrjlr" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="full-name">TV Show Name</label>
+                  <input type="text" name="name" id="full-name" placeholder="Ex - The Walking Dead" required="">
+                  <label for="email-address">Email Address</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  <label for="message">Review</label>
+                  <textarea rows="5" name="message" id="message" placeholder="Give all your thoughts here on what you thought of the show!" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+        
     </main>
     <footer>
         <h1>~Anne George~</h1> 
